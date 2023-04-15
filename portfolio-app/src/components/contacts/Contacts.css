@@ -1,0 +1,22 @@
+.contacts-container {
+  min-height: 10em;
+  min-width: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contacts-and-Links-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mail,
+.phone,
+.linkedin,
+.github {
+  max-width: 3em;
+}

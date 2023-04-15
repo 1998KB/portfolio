@@ -1,0 +1,51 @@
+.home {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1em;
+}
+
+.home-center-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-style: oblique;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 1em 1em 1em 1em;
+}
+
+.link-project {
+  width: 100%;
+  color: blueviolet;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+}
+
+.link-about {
+  width: 100%;
+  color: blueviolet;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-center-container {
+    flex-direction: row;
+  }
+  h1 {
+    text-align: left;
+  }
+}
