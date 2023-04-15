@@ -6,12 +6,17 @@ import Constacts from "../contacts/Contacts";
 const Home = () => {
   return (
     <div className="home">
-      <Link to="/projects" className="link-project">
-        Projects
-      </Link>
+      <div className="links">
+        <Link to="/about" className="link-about">
+          About
+        </Link>
+        <Link to="/projects" className="link-project">
+          Projects
+        </Link>
+      </div>
       <div className="home-center-container">
         <>
-          <h1>
+          <h1 className="motto">
             Nothing is lost
             <br />
             Noting is created
@@ -21,9 +26,6 @@ const Home = () => {
         </>
         <Constacts />
       </div>
-      <Link to="/about" className="link-about">
-        About
-      </Link>
     </div>
   );
 };
