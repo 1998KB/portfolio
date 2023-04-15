@@ -9,6 +9,7 @@ export default function Contacts() {
         <a
           href="mailto:klajdibeqiraj88@gmail.com"
           target="_blank"
+          rel="noreferrer"
           className="linkToMail"
         >
           <img src={require("../../images/mail.png")} alt="" className="mail" />
@@ -25,6 +26,7 @@ export default function Contacts() {
         <a
           href="https://github.com/1998KB"
           target="_blank"
+          rel="noreferrer"
           className="linkToGithub"
         >
           <img
@@ -36,6 +38,7 @@ export default function Contacts() {
         <a
           href="https://www.linkedin.com/in/klajdi-beqiraj-654783267/"
           target="_blank"
+          rel="noreferrer"
           className="linkToLinkedln"
         >
           <img
