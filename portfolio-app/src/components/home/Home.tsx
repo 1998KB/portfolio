@@ -1,21 +1,22 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import Constacts from "../contacts/Contacts";
+import Contacts from "../contacts/Contacts";
 
 const Home = () => {
   return (
     <div className="home">
-      <div className="links">
-        <Link to="/about" className="link-about">
-          About
-        </Link>
-        <Link to="/projects" className="link-project">
-          Projects
+      <div className="projects-link-container">
+        <Link to="/projects" className="link-projects">
+          <img
+            src={require("../../images/projectsLinkRight.png")}
+            alt=""
+            className="projectsLinkRight"
+          />
         </Link>
       </div>
       <div className="home-center-container">
-        <>
+        <div className="motto-container">
           <h1 className="motto">
             Nothing is lost
             <br />
@@ -23,8 +24,15 @@ const Home = () => {
             <br />
             Everything is developed
           </h1>
-        </>
-        <Constacts />
+          <Link to="/about" className="link-about">
+            <img
+              src={require("../../images/aboutMeLinkLeft.png")}
+              alt=""
+              className="aboutMeLinkLeft"
+            />
+          </Link>
+        </div>
+        <Contacts />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import "./Contacts.css";
 export default function Contacts() {
   return (
     <div className="contacts-container">
-      <h3>Contancts and Links:</h3>
+      <h3 className="contancts-and-link-texts">Contancts and Links:</h3>
       <div className="contacts-and-Links-container">
         <a
           href="mailto:klajdibeqiraj88@gmail.com"

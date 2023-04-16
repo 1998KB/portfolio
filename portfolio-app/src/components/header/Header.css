@@ -1,32 +1,29 @@
 .header {
-    width: 100%;
-    max-height: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    padding: 1em 0 1em 0;
+  width: 100%;
+  max-height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
+  padding: 1em 0 1em 0;
 }
 
 .header img {
-    animation: move 30s linear infinite;
-    position: relative;
-    object-fit: contain;
-    padding-right: 1em;
-    max-width: 100%;
+  animation: move 30s linear infinite;
+  position: relative;
+  object-fit: contain;
+  padding-right: 1em;
+  max-width: 100%;
 }
 
 @keyframes move {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
-
