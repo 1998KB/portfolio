@@ -7,6 +7,7 @@ const NeuroArt = () => {
     <div className="neuroArt-container">
       <div className="content-container">
         <h1 className="neuroart-title">NeuroArt</h1>
+        <h3>AI and art</h3>
 
         <div className="buttons">
           <button
