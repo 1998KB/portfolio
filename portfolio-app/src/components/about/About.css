@@ -1,0 +1,50 @@
+.about-link-container {
+  padding-top: 2em;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4em;
+}
+
+.myExpertise-link,
+.myVision-link,
+.myStory-link {
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 2.5em;
+  border-bottom: 1px solid white;
+  border-radius: 30px;
+  padding: 0 1em 1em 1em;
+  margin: 0 1em 0 1em;
+}
+
+.linkToHome {
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 2em;
+}
+.homeLinkRight {
+  max-width: 4em;
+}
+.about-linkToHome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4em;
+}
+
+@media only screen and (min-width: 700px) {
+  .about-linkToHome-container {
+    justify-content: flex-end;
+    padding: 2em 2em 0 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-link-container {
+    flex-direction: row;
+  }
+}
