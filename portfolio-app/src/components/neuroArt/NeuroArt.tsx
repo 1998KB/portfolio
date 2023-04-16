@@ -45,7 +45,7 @@ const NeuroArt = () => {
           commodi aut!
         </p>
       </div>
-      <div className="links-container">
+      <div className="neuroart-links-container">
         <Link to="/projects" className="linkToProjects">
           <img
             src={require("../../images/projectsLinkLeft.png")}
