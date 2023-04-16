@@ -1,25 +1,50 @@
 .projects-container {
-  min-height: 100vh;
+  min-height: 70vh;
+  padding-top: 2em;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+.project-title {
+  font-weight: 300;
+  font-size: 5em;
+}
+.neuroArt-link {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 100;
+}
+.projects-title-link-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2em;
 }
 
-.project-title {
-  font-size: 5em;
-}
-
-.link-home {
+.home-link-container {
   width: 100%;
-  color: blueviolet;
-  text-decoration: none;
+}
+.link-home {
+  max-width: 100%;
+  max-height: 100%;
   font-size: 2em;
-  margin-left: 2em;
+}
+.homeLinkLeft {
+  max-width: 4em;
 }
 
-.neuroArt-link {
-  text-decoration: none;
-  font-size: 3em;
+@media only screen and (min-width: 700px) {
+  .projects-title-link-container {
+    padding: 4em 0 10em 0;
+  }
+  .projects-container {
+    display: block;
+  }
+  .link-home {
+    padding-left: 2em;
+  }
 }
