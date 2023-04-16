@@ -10,7 +10,7 @@
 }
 
 .content-container {
-  max-width: 90%;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,23 +18,42 @@
   gap: 3em;
 }
 .neuroart-title {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 4em;
+  border-right: 1px solid snow;
+  border-left: 1px solid snow;
+  border-radius: 50px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-bottom: 1em;
 }
 .video {
-  max-width: 90%;
+  max-width: 100%;
   border-radius: 10px;
 }
 
 .buttons {
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .btn {
   width: 30%;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #babfc3;
+  padding: 7px 16px;
+  min-height: 36px;
+  min-width: 36px;
+  color: #ffffff;
+  background: #9c9c9c77;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
 }
 
 .description {
@@ -74,5 +93,15 @@
   }
   .neuroart-links-container {
     align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .btn {
+    background: #9c9c9c00;
+  }
+  .btn:hover {
+    background: #9c9c9c77;
+    outline: 1px solid transparent;
   }
 }

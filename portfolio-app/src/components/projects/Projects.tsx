@@ -6,7 +6,6 @@ const Projects = () => {
   return (
     <div className="projects-container">
       <div className="projects-title-link-container">
-        <h1 className="project-title">Projects</h1>
         <Link to="/projects/neuroart" className="neuroArt-link">
           NeuroArt
         </Link>

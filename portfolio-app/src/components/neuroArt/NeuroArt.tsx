@@ -7,16 +7,38 @@ const NeuroArt = () => {
     <div className="neuroArt-container">
       <div className="content-container">
         <h1 className="neuroart-title">NeuroArt</h1>
-        <video
-          src={require("../../videos/na-video.mp4")}
-          controls
-          loop
-          autoPlay
-          className="video"
-        />
+
         <div className="buttons">
-          <button className="btn">gitgub</button>
-          <button className="btn">link</button>
+          <button
+            className="btn"
+            onClick={() =>
+              window.open("https://github.com/1998KB/portfolio.git", "_blank")
+            }
+          >
+            Repo
+          </button>
+          <button
+            className="btn"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1IZoZ_ku9NMlmE8tKW2zDpf2KiQOT2NG6/view?usp=sharing",
+                "_blank"
+              )
+            }
+          >
+            Demo
+          </button>
+          <button
+            className="btn"
+            onClick={() =>
+              window.open(
+                "https://blue-sky-0e47a0403.2.azurestaticapps.net",
+                "_blank"
+              )
+            }
+          >
+            Website
+          </button>
         </div>
         <p className="description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam

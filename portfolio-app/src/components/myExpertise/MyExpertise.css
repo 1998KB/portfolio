@@ -1,0 +1,64 @@
+.myExpertise-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+
+.title-myExpertise {
+  width: 60%;
+  font-size: 150%;
+  padding: 0 2em 1em 2em;
+  border-bottom: 0.1px solid snow;
+  border-radius: 50px;
+  font-weight: 300;
+}
+
+.backend-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  font-size: x-large;
+  font-weight: 100;
+  margin: 1em;
+  padding: 0.5em 1em 0.5em 1em;
+  box-shadow: 2px 2px 2px rgba(131, 131, 131, 0.397);
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .title-myExpertise {
+    font-size: 225%;
+  }
+  .backend-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .backend-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .title-myExpertise {
+    font-size: 300%;
+  }
+  .backend-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .about-linkToHome-container {
+    width: 100%;
+    flex-direction: row;
+  }
+}
