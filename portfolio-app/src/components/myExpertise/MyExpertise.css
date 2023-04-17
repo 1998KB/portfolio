@@ -9,12 +9,18 @@
 }
 
 .title-myExpertise {
-  width: 60%;
+  width: 80%;
   font-size: 150%;
-  padding: 0 2em 1em 2em;
+  padding: 1em 2em 1em 2em;
   border-bottom: 0.1px solid snow;
   border-radius: 50px;
   font-weight: 300;
+}
+.about-linkToHome-container {
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .backend-container {
@@ -22,15 +28,16 @@
   margin: 0 auto;
   display: grid;
   gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
-  font-size: x-large;
+  font-size: medium;
   font-weight: 100;
-  margin: 1em;
-  padding: 0.5em 1em 0.5em 1em;
+  margin: 0.5em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
   box-shadow: 2px 2px 2px rgba(131, 131, 131, 0.397);
-  height: 4rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,13 +48,16 @@
     font-size: 225%;
   }
   .backend-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 900px) {
   .backend-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card {
+    font-size: large;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -55,10 +65,9 @@
     font-size: 300%;
   }
   .backend-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
-  .about-linkToHome-container {
-    width: 100%;
-    flex-direction: row;
+  .card {
+    font-size: x-large;
   }
 }
