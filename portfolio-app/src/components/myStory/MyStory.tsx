@@ -1,11 +1,7 @@
-import React from 'react';
-
+import React from "react";
+import "./MyStory.css";
 const MyStory = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  return <div className="myStory-container">Coding...</div>;
 };
 
 export default MyStory;

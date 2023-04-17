@@ -16,8 +16,8 @@
   font-weight: 100;
   font-size: 2em;
   border-bottom: 1px solid white;
-  border-radius: 30px;
-  padding: 0 1em 1em 1em;
+  border-radius: 20px;
+  padding: 0.5em 1em 0.5em 1em;
   margin: 0 1em 0 1em;
 }
 
@@ -25,6 +25,7 @@
   max-width: 100%;
   max-height: 100%;
   font-size: 2em;
+  padding-right: 1em;
 }
 .homeLinkRight {
   max-width: 4em;
@@ -42,5 +43,10 @@
 @media only screen and (min-width: 1024px) {
   .about-link-container {
     flex-direction: row;
+  }
+  .myExpertise-link:hover,
+  .myVision-link:hover,
+  .myStory-link:hover {
+    background: rgba(255, 250, 250, 0.211);
   }
 }

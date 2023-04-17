@@ -1,0 +1,7 @@
+.myVision-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-height: 60vh;
+}
