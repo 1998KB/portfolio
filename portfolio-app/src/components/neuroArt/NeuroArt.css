@@ -34,20 +34,20 @@
 }
 
 .btn {
+  font-weight: 300;
   display: inline-block;
   outline: 0;
   cursor: pointer;
   text-align: center;
   border: 1px solid #ffffff;
-  padding: 7px 16px;
-  margin: 1em;
+  margin: 0.5em;
   min-height: 50px;
   min-width: 100px;
   color: #ffffff;
   background: #9c9c9c77;
   border-radius: 10px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
 }
 
@@ -83,7 +83,7 @@
   font-weight: 300;
 }
 .neuroArt-description {
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: center;
   font-weight: 300;
   letter-spacing: 1px;
@@ -96,11 +96,17 @@
     text-indent: 2em;
     line-height: 1.5em;
   }
+  .btn {
+    padding: 7px 16px;
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .btn {
     background: #9c9c9c00;
+    padding: 7px 16px;
+    font-size: 20px;
   }
   .btn:hover {
     background: #9c9c9c77;
