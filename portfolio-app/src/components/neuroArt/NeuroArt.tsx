@@ -7,8 +7,10 @@ const NeuroArt = () => {
     <div className="neuroArt-container">
       <div className="content-container">
         <h1 className="neuroart-title">NeuroArt</h1>
-        <h3>AI and art</h3>
-
+        <h2 className="neuroArt-subtitle">
+          {" "}
+          Unleash Your Inner Artist with AI-Powered Creations
+        </h2>
         <div className="buttons">
           <button
             className="btn"
@@ -16,7 +18,7 @@ const NeuroArt = () => {
               window.open("https://github.com/1998KB/portfolio.git", "_blank")
             }
           >
-            Repo
+            Git Repo
           </button>
           <button
             className="btn"
@@ -27,7 +29,7 @@ const NeuroArt = () => {
               )
             }
           >
-            Demo
+            App Demo
           </button>
           <button
             className="btn"
@@ -41,31 +43,19 @@ const NeuroArt = () => {
             Website
           </button>
         </div>
-        <p className="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          adipisci facere modi laboriosam magni? Voluptatibus qui laboriosam
-          molestiae aspernatur corporis sit animi, earum esse aperiam dolores
-          dicta voluptatum sequi veniam quaerat quasi iusto ea accusantium amet
-          numquam optio quibusdam nobis! Doloremque illum natus aliquid!
-          Similique, inventore sint! Maxime quidem repellendus veniam ipsum
-          porro in placeat dolores ea nihil quod officiis ipsa id obcaecati,
-          magnam molestias aspernatur sint ullam eaque. Sunt possimus
-          laboriosam, in natus tempora odit sapiente repudiandae mollitia,
-          tempore enim facilis laborum dolor fugit quia voluptatum beatae,
-          tenetur hic perspiciatis repellat! Unde, praesentium obcaecati
-          blanditiis temporibus iste doloremque quisquam incidunt voluptate
-          dicta id autem, voluptates fuga. Aspernatur rerum error dolorem.
-          Perspiciatis temporibus atque corporis sapiente ipsa! Non natus id
-          iste quo recusandae, sequi nostrum voluptate quae, nulla commodi ad.
-          Quidem accusantium nam deleniti atque nisi unde sed doloremque! Iste
-          inventore, consectetur eos explicabo asperiores, beatae ut ullam ab,
-          repellendus sed sequi reprehenderit voluptas atque quibusdam eligendi
-          nisi officiis laudantium distinctio. Numquam necessitatibus magni
-          minus veniam modi a ipsa pariatur totam iste, deserunt cupiditate
-          iusto sint maxime perspiciatis sequi dolore voluptate exercitationem.
-          Aspernatur quis ipsum autem exercitationem, possimus veritatis, ad
-          modi eligendi asperiores consequatur pariatur corrupti commodi? Atque,
-          commodi aut!
+        <p className="neuroArt-description">
+          Get ready to unleash your creativity with NeuroArt, a cutting-edge
+          website that produces stunning AI art. Built by a team of four amazing
+          developers in just 10 days, NeuroArt uses the latest technology stack
+          including postgreSQL, Java Spring, Typescript, React, and Azure. With
+          our state-of-the-art AI technology, you can experiment with various
+          styles, colors, and themes to bring your vision to life. Whether
+          you're an artist, designer, or simply someone who loves to create,
+          NeuroArt provides an easy-to-use interface and intuitive controls to
+          generate beautiful images in just a few clicks. With our gallery
+          showcasing a diverse range of styles and techniques, you can get
+          inspired and let your imagination take flight. So sign up now, explore
+          your creativity, and create stunning art that's uniquely you.
         </p>
       </div>
       <div className="neuroart-links-container">
