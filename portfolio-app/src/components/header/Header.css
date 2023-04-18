@@ -13,7 +13,6 @@
 .header img {
   animation: move 70s linear infinite;
   position: relative;
-  object-fit: contain;
   padding-right: 1em;
   min-width: 300%;
 }
