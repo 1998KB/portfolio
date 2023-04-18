@@ -110,6 +110,7 @@
     padding: 7px 16px;
     font-size: 20px;
     min-width: 300px;
+    transition: background-color 300ms ease-in;
   }
   .btn:hover {
     background: #9c9c9c77;

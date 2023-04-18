@@ -1,6 +1,9 @@
+.about-container {
+  min-height: 50vh;
+}
 .about-link-container {
   padding-top: 2em;
-  min-height: 50vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,6 +18,7 @@
   text-decoration: none;
   font-weight: 100;
   font-size: 2em;
+  min-width: 6em;
   border-bottom: 1px solid white;
   border-radius: 20px;
   padding: 0.5em 1em 0.5em 1em;
@@ -47,6 +51,7 @@
   .myExpertise-link:hover,
   .myVision-link:hover,
   .myStory-link:hover {
+    transition: background-color 300ms linear;
     background: rgba(255, 250, 250, 0.211);
   }
 }

@@ -1,9 +1,43 @@
 .footer {
   text-align: right;
   max-width: 100%;
-  padding: 5em 0.5em 0 0;
+  padding: 3em 1.5em 0 0;
 }
 
-.footer-img {
-  max-width: 80%;
+@import url(//db.onlinewebfonts.com/c/d002e7c91b889cc10ce21789cfde95dd?family=Sequel100Wide-95);
+
+.full-stack,
+.developer {
+  font-family: "Sequel100Wide-95", sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  font-style: oblique;
+  text-align: right;
+  color: rgba(255, 250, 250, 0.18);
+  transition: background-color 300ms linear;
+}
+
+.full-stack {
+  margin-bottom: -0.4em;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 700px) {
+  .footer {
+    margin-right: 1em;
+  }
+  .full-stack {
+    font-size: 4em;
+  }
+  .developer {
+    font-size: 5em;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .full-stack {
+    font-size: 6em;
+  }
+  .developer {
+    font-size: 8em;
+  }
 }
