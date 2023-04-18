@@ -12,6 +12,7 @@
 }
 
 body {
+  cursor: none !important;
   min-height: 50vh;
   max-width: 100%;
   overflow-x: hidden;

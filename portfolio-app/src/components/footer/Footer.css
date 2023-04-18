@@ -15,7 +15,9 @@
   font-size: 2.5em;
   font-style: oblique;
   text-align: right;
-  color: rgba(255, 250, 250, 0.1);
+  color: rgba(255, 250, 250, 0.05);
+  /* -webkit-text-stroke-color: #8484847e;
+  -webkit-text-stroke-width: 1px; */
   transition: background-color 300ms linear;
   padding: 0;
   margin: 0;

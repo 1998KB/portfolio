@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "../header/Header";
@@ -14,8 +14,32 @@ import LandingPage from "../landingPage/LandingPage";
 
 function App() {
   const { pathname } = useLocation();
+
+  useEffect(() => {
+    const cursorRounded = document.querySelector(".rounded") as HTMLElement;
+    const cursorPointed = document.querySelector(".pointed") as HTMLElement;
+
+    const moveCursor = (e: MouseEvent) => {
+      const mouseY = e.clientY;
+      const mouseX = e.clientX;
+
+      requestAnimationFrame(() => {
+        cursorRounded.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+        cursorPointed.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+      });
+    };
+
+    window.addEventListener("mousemove", moveCursor);
+
+    return () => {
+      window.removeEventListener("mousemove", moveCursor);
+    };
+  }, []);
+
   return (
     <div className="App">
+      <div className="pointed"></div>
+      <div className="rounded"></div>
       {pathname !== "/" && <Header />}
       <Routes>
         <Route path="/" element={<LandingPage />} />

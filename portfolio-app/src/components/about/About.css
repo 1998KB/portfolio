@@ -19,7 +19,8 @@
   font-weight: 100;
   font-size: 2em;
   min-width: 6em;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
   border-radius: 20px;
   padding: 0.5em 1em 0.5em 1em;
   margin: 0 1em 0 1em;

@@ -67,7 +67,7 @@
       margin-top: -50%;
       margin-left: -50%;
       border-radius: 100px;
-      background-color: rgba(70, 70, 70, 0.325);
+      background-color: rgba(70, 70, 70, 0.113);
       transition: all 400ms;
     }
 
@@ -81,7 +81,7 @@
       font-variant: normal;
       text-transform: none;
       line-height: 1;
-      color: #fff;
+      color: #cccccc;
       font-size: 26px;
       line-height: 66px;
     }
@@ -94,10 +94,13 @@
   &.spin-icon a:hover:after, &.spin-icon a:focus:after {
     transition: transform 0.4s ease-out;
     transform: rotateZ(360deg);
+    color: #ffffff;
+
   }
   
   &.square a:hover:before, &.square a:focus:before {
     border-radius: 0;
+
   }
   
   &.bounce a:hover, &.bounce a:focus {

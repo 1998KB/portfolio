@@ -15,13 +15,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 5em;
 }
 .neuroart-title {
+  margin-top: 1em;
   font-weight: 100;
   font-size: 3em;
-  border-right: 1px solid snow;
-  border-left: 1px solid snow;
+  border-top: 1px solid snow;
+  border-bottom: 1px solid snow;
   border-radius: 25px;
   padding: 0.5em 0.5em 0.5em 0.5em;
 }
@@ -113,7 +114,7 @@
     transition: background-color 300ms ease-in;
   }
   .btn:hover {
-    background: #9c9c9c77;
+    background: rgb(255, 250, 250, 0.211);
     outline: 1px solid transparent;
   }
 
