@@ -59,14 +59,14 @@ const NeuroArt = () => {
         </p>
       </div>
       <div className="neuroart-links-container">
-        <Link to="/projects" className="linkToProjects">
+        <Link to="/home/projects" className="linkToProjects">
           <img
             src={require("../../images/projectsLinkLeft.png")}
             alt=""
             className="projectsLinkLeft"
           />
         </Link>
-        <Link to="/" className="linkToHome">
+        <Link to="/home" className="linkToHome">
           <img
             src={require("../../images/homeLinkLeft.png")}
             alt=""

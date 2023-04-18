@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="projects-link-container">
-        <Link to="/projects" className="link-projects">
+        <Link to="/home/projects" className="link-projects">
           <img
             src={require("../../images/projectsLinkRight.png")}
             alt=""
@@ -24,7 +24,7 @@ const Home = () => {
             <br />
             Everything is developed
           </h1>
-          <Link to="/about" className="link-about">
+          <Link to="/home/about" className="link-about">
             <img
               src={require("../../images/aboutMeLinkLeft.png")}
               alt=""

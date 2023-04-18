@@ -7,7 +7,7 @@ const MyExpertise = () => {
     <div className="myExpertise-container">
       HACKING...
       <div className="about-linkToHome-container">
-        <Link to="/" className="linkToHome">
+        <Link to="/home" className="linkToHome">
           <img
             src={require("../../images/homeLinkRight.png")}
             alt=""

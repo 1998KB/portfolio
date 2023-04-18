@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "../header/Header";
 import Home from "../home/Home";
 import About from "../about/About";
@@ -10,21 +10,24 @@ import MyVision from "../myVision/MyVision";
 import Footer from "../footer/Footer";
 import NeuroArt from "../neuroArt/NeuroArt";
 import MyExpertise from "../myExpertise/MyExpertise";
+import LandingPage from "../landingPage/LandingPage";
 
 function App() {
+  const { pathname } = useLocation();
   return (
     <div className="App">
-      <Header />
+      {pathname !== "/" && <Header />}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/neuroart" element={<NeuroArt />} />
-        <Route path="/about/my-vision" element={<MyVision />} />
-        <Route path="/about/my-story" element={<MyStory />} />
-        <Route path="/about/my-expertise" element={<MyExpertise />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/home/about" element={<About />} />
+        <Route path="/home/projects" element={<Projects />} />
+        <Route path="/home/projects/neuroart" element={<NeuroArt />} />
+        <Route path="/home/about/my-vision" element={<MyVision />} />
+        <Route path="/home/about/my-story" element={<MyStory />} />
+        <Route path="/home/about/my-expertise" element={<MyExpertise />} />
       </Routes>
-      <Footer />
+      {pathname !== "/" && <Footer />}
     </div>
   );
 }
