@@ -45,17 +45,17 @@ const NeuroArt = () => {
         </div>
         <p className="neuroArt-description">
           Get ready to unleash your creativity with NeuroArt, a cutting-edge
-          website that produces stunning AI art. Built by a team of four amazing
+          website that produces stunning AI art. Built with other three amazing
           developers in just 10 days, NeuroArt uses the latest technology stack
-          including postgreSQL, Java Spring, Typescript, React, and Azure. With
-          our state-of-the-art AI technology, you can experiment with various
-          styles, colors, and themes to bring your vision to life. Whether
-          you're an artist, designer, or simply someone who loves to create,
-          NeuroArt provides an easy-to-use interface and intuitive controls to
-          generate beautiful images in just a few clicks. With our gallery
-          showcasing a diverse range of styles and techniques, you can get
-          inspired and let your imagination take flight. So sign up now, explore
-          your creativity, and create stunning art that's uniquely you.
+          including postgreSQL, Java, SpringBoot, Typescript, React, and Azure.
+          With our state-of-the-art AI technology, you can experiment with
+          various styles, colors, and themes to bring your vision to life.
+          Whether you're an artist, designer, or simply someone who loves to
+          create, NeuroArt provides an easy-to-use interface and intuitive
+          controls to generate beautiful images in just a few clicks. With our
+          gallery showcasing a diverse range of styles and techniques, you can
+          get inspired and let your imagination take flight. So sign up now,
+          explore your creativity, and create stunning art that's uniquely you.
         </p>
       </div>
       <div className="neuroart-links-container">
