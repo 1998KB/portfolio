@@ -11,11 +11,7 @@ const Projects = () => {
         </Link>
       </div>
       <Link to="/home" className="link-home">
-        <img
-          src={require("../../images/homeLinkLeft.png")}
-          alt=""
-          className="homeLinkLeft"
-        />
+        Home
       </Link>
     </div>
   );

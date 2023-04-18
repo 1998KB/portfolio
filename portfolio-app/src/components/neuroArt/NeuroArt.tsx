@@ -19,6 +19,7 @@ const NeuroArt = () => {
             }
           >
             Git Repo
+            <img src={require("../../images/code.png")} alt="" />
           </button>
           <button
             className="btn"
@@ -30,6 +31,7 @@ const NeuroArt = () => {
             }
           >
             App Demo
+            <img src={require("../../images/video.png")} alt="" />
           </button>
           <button
             className="btn"
@@ -41,6 +43,7 @@ const NeuroArt = () => {
             }
           >
             Website
+            <img src={require("../../images/website.png")} alt="" />
           </button>
         </div>
         <p className="neuroArt-description">
@@ -60,18 +63,10 @@ const NeuroArt = () => {
       </div>
       <div className="neuroart-links-container">
         <Link to="/home/projects" className="linkToProjects">
-          <img
-            src={require("../../images/projectsLinkLeft.png")}
-            alt=""
-            className="projectsLinkLeft"
-          />
+          Projects
         </Link>
         <Link to="/home" className="linkToHome">
-          <img
-            src={require("../../images/homeLinkLeft.png")}
-            alt=""
-            className="homeLinkLeft"
-          />
+          Home
         </Link>
       </div>
     </div>

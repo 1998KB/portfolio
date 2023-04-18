@@ -8,11 +8,7 @@ const Home = () => {
     <div className="home">
       <div className="projects-link-container">
         <Link to="/home/projects" className="link-projects">
-          <img
-            src={require("../../images/projectsLinkRight.png")}
-            alt=""
-            className="projectsLinkRight"
-          />
+          Projects
         </Link>
       </div>
       <div className="home-center-container">
@@ -25,11 +21,7 @@ const Home = () => {
             Everything is developed
           </h1>
           <Link to="/home/about" className="link-about">
-            <img
-              src={require("../../images/aboutMeLinkLeft.png")}
-              alt=""
-              className="aboutMeLinkLeft"
-            />
+            About Me
           </Link>
         </div>
         <Contacts />

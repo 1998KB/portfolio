@@ -1,13 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100&display=swap");
-
+@font-face {
+  font-family: bodyFont;
+  src: url("../src/fonts/abecedario.ttf") format("truetype");
+}
 * {
+  text-decoration: none;
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   list-style: none;
-  font-family: "Lato", sans-serif;
-  color: #ffffff;
+  font-family: "bodyFont", sans-serif;
+  color: rgba(255, 250, 250, 0.694);
   font-weight: 100;
 }
 

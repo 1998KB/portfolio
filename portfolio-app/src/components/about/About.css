@@ -27,14 +27,11 @@
 }
 
 .linkToHome {
-  max-width: 100%;
-  max-height: 100%;
+  color: #999999;
   font-size: 2em;
   padding-right: 1em;
 }
-.homeLinkRight {
-  max-width: 4em;
-}
+
 .about-linkToHome-container {
   display: flex;
   justify-content: flex-end;
@@ -54,5 +51,8 @@
   .myStory-link:hover {
     transition: background-color 300ms linear;
     background: rgba(255, 250, 250, 0.211);
+  }
+  .linkToHome:hover {
+    color: snow;
   }
 }

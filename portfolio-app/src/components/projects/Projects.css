@@ -29,13 +29,8 @@
   width: 100%;
 }
 .link-home {
-  max-width: 100%;
-  max-height: 100%;
   font-size: 2em;
   padding-left: 1em;
-}
-.homeLinkLeft {
-  max-width: 4em;
 }
 
 @media only screen and (min-width: 700px) {
@@ -57,5 +52,11 @@
   }
   .neuroArt-link:hover {
     background-color: rgba(255, 250, 250, 0.211);
+  }
+  .link-home {
+    color: #999999;
+  }
+  .link-home:hover {
+    color: snow;
   }
 }

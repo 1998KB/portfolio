@@ -18,11 +18,7 @@ const About = () => {
       </div>
       <div className="about-linkToHome-container">
         <Link to="/home" className="linkToHome">
-          <img
-            src={require("../../images/homeLinkRight.png")}
-            alt=""
-            className="homeLinkRight"
-          />
+          Home
         </Link>
       </div>
     </div>

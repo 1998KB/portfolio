@@ -4,15 +4,21 @@ import { Link } from "react-router-dom";
 const MyVision = () => {
   return (
     <div className="myVision-container">
-      HACKING...
-      <div className="about-linkToHome-container">
-        <Link to="/home" className="linkToHome">
-          <img
-            src={require("../../images/homeLinkRight.png")}
-            alt=""
-            className="homeLinkRight"
-          />
-        </Link>
+      HACKING MY VISION...
+      <div className="links-constainer">
+        <div className="about-links-left">
+          <Link to="/home/about/my-story" className="links">
+            My Story
+          </Link>
+          <Link to="/home/about/my-expertise" className="links">
+            My Expertise
+          </Link>
+        </div>
+        <div className="about-links-right">
+          <Link to="/home" className="linkToHome">
+            Home
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -20,37 +20,21 @@
   font-size: 2.5em;
   text-align: center;
   padding: 1em 0 1em 0;
+  color: #707070;
 }
 .projects-link-container {
   width: 100%;
 }
 .link-projects {
-  max-width: 100%;
-  max-height: 100%;
-  text-decoration: none;
+  color: #999999;
+
   font-size: 2em;
-}
-.projectsLinkRight {
-  max-width: 4em;
 }
 
 .link-about {
-  max-width: 100%;
-  max-height: 100%;
-  text-decoration: none;
-  font-size: 2em;
-}
-.aboutMeLinkLeft {
-  max-width: 4em;
-}
+  color: #999999;
 
-.links {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2em;
+  font-size: 2em;
 }
 
 .motto-container {
@@ -80,6 +64,11 @@
   }
 
   .motto-container {
-    padding-left: 10em;
+    padding-left: 5em;
+  }
+
+  .link-projects:hover,
+  .link-about:hover {
+    color: snow;
   }
 }

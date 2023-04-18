@@ -9,9 +9,6 @@
     min-height: 100vh;
     gap: 6em;
 }
-.btn{
-    border: none;
-}
 
 @mixin obj($w,$h,$bg) {
     width: $w;

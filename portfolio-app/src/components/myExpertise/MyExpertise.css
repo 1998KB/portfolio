@@ -5,4 +5,29 @@
   align-items: center;
   max-width: 100%;
   min-height: 50vh;
+  gap: 10em;
+}
+
+.links {
+  font-size: 2em;
+  color: #999999;
+}
+
+.about-links-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1em;
+  padding-left: 2em;
+}
+.links-constainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 1024px) {
+  .links:hover {
+    color: snow;
+  }
 }
