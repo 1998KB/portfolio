@@ -1,10 +1,12 @@
-.home {
-  padding-top: 2em;
-  max-height: 75vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+@media only screen and (max-width: 1400px) {
+  .home {
+    padding-top: 2em;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .home-center-container {
@@ -95,6 +97,9 @@
   .motto-container {
     margin-top: -5.5em;
   }
+  .home {
+    min-height: 50vh;
+  }
   .motto-letter {
     font-size: 5em;
   }
@@ -102,7 +107,7 @@
     padding-right: 3em;
   }
   .link-projects {
-    font-size: 5em;
-    margin-right: 1em;
+    font-size: 4em;
+    margin-right: 3em;
   }
 }

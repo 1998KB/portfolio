@@ -34,8 +34,8 @@ const LandingPage = () => {
           <li className="landing-page-li">0</li>
         </ul>
       </div>
-      <Link to="/home" className="neuroArt-link">
-        Curious?
+      <Link to="/home" className="home-link-landing">
+        {"< ? />"}
       </Link>
     </div>
   );
