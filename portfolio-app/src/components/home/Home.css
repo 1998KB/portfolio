@@ -1,6 +1,6 @@
 .home {
   padding-top: 2em;
-  min-height: 50vh;
+  max-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,6 @@
 }
 
 .motto {
-  font-style: italic;
   font-size: 2.5em;
   text-align: center;
   padding: 1em 0 1em 0;
@@ -41,21 +40,41 @@
   display: flex;
   flex-direction: column;
 }
-
+.motto-letters {
+  display: none;
+}
 @media only screen and (min-width: 1024px) {
+  .motto-letters {
+    display: flex;
+  }
+  .motto-letter {
+    font-size: 4em;
+    color: #707070;
+    filter: blur(1px);
+    transition: all 2s;
+    font-weight: 900;
+  }
+  .motto-letter:hover {
+    transform: rotate(20deg) translatey(-20px);
+    opacity: 0;
+    filter: blur(20px);
+  }
   .home {
     padding-top: 5em;
   }
   .home-center-container {
+    max-width: 100%;
     flex-direction: row;
   }
   .motto {
+    display: none;
     text-align: left;
     font-size: 3em;
   }
   .motto-container {
     justify-content: left;
     align-items: flex-start;
+    gap: 2em;
   }
 
   .projects-link-container {
@@ -70,5 +89,20 @@
   .link-projects:hover,
   .link-about:hover {
     color: snow;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .motto-container {
+    margin-top: -5.5em;
+  }
+  .motto-letter {
+    font-size: 5em;
+  }
+  .contacts-home {
+    padding-right: 3em;
+  }
+  .link-projects {
+    font-size: 5em;
+    margin-right: 1em;
   }
 }

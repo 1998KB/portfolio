@@ -13,9 +13,7 @@
 .full-stack,
 .developer {
   font-family: "sequel", sans-serif;
-  font-weight: bold;
   font-size: 1.5em;
-  font-style: oblique;
   text-align: right;
   color: rgba(255, 250, 250, 0.05);
   /* -webkit-text-stroke-color: #8484847e;

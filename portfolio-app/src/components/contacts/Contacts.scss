@@ -1,6 +1,6 @@
 .contacts-container {
   min-height: 10em;
-  min-width: 20em;
+  min-width: 10em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -8,25 +8,40 @@
   margin-top: 3em;
   gap: 1em;
 }
-.contancts-and-link-texts {
+.contanct-me-text {
   font-weight: 300;
-  font-size: x-large;
+  font-size: xx-large;
   color: snow;
 }
 
 .contacts-and-Links-container {
   width: 100%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
 .mail,
-.phone,
-.linkedin,
-.github {
-  max-width: 2.5em;
+.phone{
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  max-width: 5em;
+
 }
+
+.mailhover,
+.phonehover{
+  margin-left: -50px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+
+}
+
+.contact-me-container{
+  width: 95%;
+  gap: 2em;
+  align-items: center;
+}
+
 @font-face {
 	font-family: 'icomoon';
 	src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?3qkin2');
@@ -82,18 +97,20 @@
       font-variant: normal;
       text-transform: none;
       line-height: 1;
-      color: #cccccc;
+      color: #fffafa;
       font-size: 26px;
       line-height: 66px;
     }
 
     &:hover, &:focus {
       text-decoration: none;
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
     }
   }
   
   &.spin-icon a:hover:after, &.spin-icon a:focus:after {
-    transition: transform 0.4s ease-out;
+    transition: transform 0.5s ease-out;
     transform: rotateZ(360deg);
     color: #ffffff;
 
@@ -150,13 +167,32 @@
   flex-direction: row;
 justify-content: space-around;
 }
+@media only screen and (min-width: 450px) {
+.contanct-me-text {
+  width: 8em;
+
+}
+}
 @media only screen and (min-width: 1024px) {
-  .contacts-container {
-    padding-right: 4em;
+  .linkToMail:hover .mail,
+  .phone-switch:hover .phone{
+    opacity: 0;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+
+
   }
+  .linkToMail:hover .mailhover,
+  .phone-switch:hover .phonehover{
+    opacity: 1;
+    transform: scale(1.1) ;
+    transition: transform 0.2s ease-in-out;
+
+
+
+  }
+  
   .contact-me-container{
-    width: 95%;
-    gap: 1em;
   justify-content: flex-end;
   }
 }

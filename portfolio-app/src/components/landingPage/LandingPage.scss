@@ -41,6 +41,10 @@
   }
   
   .landing-page-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
     @include obj(40px,40px,#707070);
     border-radius:4px;
     box-shadow: 0 0 1px #fff, 0 0 5px #707070, 0 0 10px #707070, 0 0 15px #707070, 0 0 25px #707070, 0 0 55px #707070;
